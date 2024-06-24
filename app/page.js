@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import Marquee from './components/marquee';
 import HeroVideoSection from './components/heroVideoSection';
 import DecorationBig from './components/decorationBig';
@@ -10,10 +10,9 @@ import PromiseSection from './components/promiseSection';
 import SecondSlider from './components/secondSlider';
 import ThirdSlider from './components/thirdSlider';
 import FourthSlider from './components/fourthSlider';
+import DecorationSmall from './components/decorationSmall';
+import Footer from './components/footer';
 
-
-
-import Image from 'next/image'
 export default function Home() {
   return (
     <>
@@ -29,10 +28,9 @@ export default function Home() {
     <SecondSlider/>
     <ThirdSlider/>
     <FourthSlider/>
+    <DecorationSmall/>
     </main>
-    <footer>
-
-    </footer>
+    <Footer/>
     </>
   );
 }
