@@ -6,8 +6,17 @@ import FirstDescription from './components/firstDescription';
 import StockModa from './components/stockModa'
 import FirstSlider from './components/firstSlider';
 import SecondDescription from './components/secondDescription';
+import PromiseSection from './components/promiseSection';
+import SecondSlider from './components/secondSlider';
+import ThirdSlider from './components/thirdSlider';
+import FourthSlider from './components/fourthSlider';
+
+
+
+import Image from 'next/image'
 export default function Home() {
   return (
+    <>
     <main>
       <Marquee/>
       <HeroVideoSection/>
@@ -16,6 +25,14 @@ export default function Home() {
     <FirstDescription/>
     <FirstSlider/>
     <SecondDescription/>
+    <PromiseSection/>
+    <SecondSlider/>
+    <ThirdSlider/>
+    <FourthSlider/>
     </main>
+    <footer>
+
+    </footer>
+    </>
   );
 }

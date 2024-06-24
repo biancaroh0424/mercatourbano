@@ -1,15 +1,17 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules';
+import {Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import Image from 'next/image';
-import Image1 from '/public/images/foto_MU/mu_1.jpg';
-import Image2 from '/public/images/foto_MU/mu_2.jpg';
+import Image6 from '/public/images/foto_MU/mu_6.jpg';
+import Image7 from '/public/images/foto_MU/mu_7.jpg';
+import Image8 from '/public/images/foto_MU/mu_8.jpg';
 
-const FirstSlider = ()=>{
+const FourthSlider = ()=>{
     return(
         <div className="sliderBodyDiv">
+          <div className="sliderEmpty"></div>
         <div className="sliderDiv">
         <Swiper
           slidesPerView={1}
@@ -18,7 +20,7 @@ const FirstSlider = ()=>{
           centeredSlides={true}
           autoplay={{
             delay: 2500,
-            disableOnInteraction: true,
+            disableOnInteraction: false,
           }}
           pagination={{
             clickable: false,
@@ -27,15 +29,14 @@ const FirstSlider = ()=>{
           modules={[Autoplay]}
           className="mySwiper"
         >
-          <SwiperSlide><Image src={Image1} alt="" /></SwiperSlide>
-          <SwiperSlide><Image src={Image2} alt="" /></SwiperSlide>
-          <SwiperSlide><Image src={Image1} alt="" /></SwiperSlide>
-          <SwiperSlide><Image src={Image2} alt="" /></SwiperSlide>
+          <SwiperSlide><Image src={Image6} alt="" /></SwiperSlide>
+          <SwiperSlide><Image src={Image7} alt="" /></SwiperSlide>
+          <SwiperSlide><Image src={Image8} alt="" /></SwiperSlide>
         </Swiper>
         </div>
-        <div className="sliderEmpty"></div>
+        
         </div>
     )
 }
 
-export default FirstSlider
+export default FourthSlider

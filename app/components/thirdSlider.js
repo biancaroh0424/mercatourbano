@@ -4,10 +4,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import Image from 'next/image';
-import Image1 from '/public/images/foto_MU/mu_1.jpg';
-import Image2 from '/public/images/foto_MU/mu_2.jpg';
 
-const FirstSlider = ()=>{
+import Image6 from '/public/images/foto_MU/mu_6.jpg';
+
+
+const ThirdSlider = ()=>{
     return(
         <div className="sliderBodyDiv">
         <div className="sliderDiv">
@@ -16,21 +17,15 @@ const FirstSlider = ()=>{
           loop={true}
           spaceBetween={30}
           centeredSlides={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: true,
-          }}
+          autoplay={false}
           pagination={{
-            clickable: false,
+            clickable: true,
           }}
           navigation={false}
           modules={[Autoplay]}
           className="mySwiper"
         >
-          <SwiperSlide><Image src={Image1} alt="" /></SwiperSlide>
-          <SwiperSlide><Image src={Image2} alt="" /></SwiperSlide>
-          <SwiperSlide><Image src={Image1} alt="" /></SwiperSlide>
-          <SwiperSlide><Image src={Image2} alt="" /></SwiperSlide>
+          <SwiperSlide><Image src={Image6} alt="" /></SwiperSlide>
         </Swiper>
         </div>
         <div className="sliderEmpty"></div>
@@ -38,4 +33,4 @@ const FirstSlider = ()=>{
     )
 }
 
-export default FirstSlider
+export default ThirdSlider
